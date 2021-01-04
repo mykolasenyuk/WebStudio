@@ -1,5 +1,15 @@
+.page-footer {
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
+}
 .page-footer__address-container {
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 
 .page-footer__address {

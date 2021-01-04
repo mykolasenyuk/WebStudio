@@ -2,10 +2,16 @@
   display: inline-block;
   color: var(--accent-color);
   font-family: Raleway;
-  @include font(600, 26px, 1.19);
-
-  padding-bottom: 25px;
-  padding-top: 24px;
+  @media screen and (max-width: 1199px) {
+    @include font(600, 24px, 1.16);
+    margin-right: 88px;
+  }
+  @media screen and (min-width: 1200px) {
+    @include font(600, 26px, 1.19);
+    padding-bottom: 25px;
+    padding-top: 24px;
+    margin-right: 93px;
+  }
 
   &-nav {
     color: #000000;

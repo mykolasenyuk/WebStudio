@@ -10,7 +10,14 @@ a {
 }
 
 .page-header {
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+  position: relative;
   border-bottom: 1px solid #ececec;
+  & .container {
+    height: 100%;
+  }
 }
 
 .list {
@@ -22,6 +29,7 @@ a {
   display: block;
   margin: 0 auto;
   padding: 10px 32px;
+  min-height: 50px;
   min-width: 200px;
   cursor: pointer;
   border-radius: 4px;
@@ -42,11 +50,17 @@ a {
 }
 
 .section__title {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    @include font(700, 36px, 1.16);
+  }
   margin-top: 0;
-  margin-bottom: 50px;
 
   color: var(--custom-text-color);
-  @include font(700, 36px, 1.16);
+  @include font(700, 28px, 1.16);
 
   text-align: center;
   letter-spacing: 0.03em;

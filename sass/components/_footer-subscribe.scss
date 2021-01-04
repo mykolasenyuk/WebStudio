@@ -1,9 +1,13 @@
 .page-footer {
   &__subscribe-container {
-    margin-left: 93px;
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
   }
   &__subscribe-form {
-    @include centerflex(flex, relative);
+    @media screen and (min-width: 1200px) {
+      @include centerflex(flex, relative);
+    }
   }
   &__subscribe-label {
     position: absolute;
@@ -14,7 +18,19 @@
     letter-spacing: 0.03em;
   }
   &__subscribe-input {
-    width: 358px;
+    @media screen and (max-width: 767px) {
+      width: 100%;
+    }
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 20px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
+
     height: 50px;
     padding: 15px 16px;
     margin-right: 12px;

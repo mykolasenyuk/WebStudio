@@ -1,3 +1,8 @@
+.service {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
 .service__list {
   display: flex;
   flex-wrap: nowrap;

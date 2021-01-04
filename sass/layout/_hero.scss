@@ -21,8 +21,12 @@
     margin-bottom: 30px;
 
     color: var(--primary-white-color);
-    @include font(900, 44px, 1.36);
+    @include font(900, 26px, 1.36);
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 50px;
+      @include font(900, 44px, 1.36);
+    }
   }
 }

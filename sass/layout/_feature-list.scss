@@ -1,24 +1,47 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .feature {
   margin-top: 0;
-  padding-bottom: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 94px;
+  }
 
   &__list {
-    display: flex;
-    flex-wrap: nowrap;
-
+    margin: 0;
     list-style: none;
     color: var(--text-color);
-    margin-top: 0;
-    margin-bottom: 0;
     padding: 0;
+
+    @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: -15px;
+      margin-bottom: -15px;
+    }
+    @media screen and (min-width: 1200px) {
+    }
     &-item {
-      width: 270px;
       margin: auto;
+      @media screen and (min-width: 768px) {
+        width: calc((100% - 2 * 30px) / 2);
+        margin: 15px;
+      }
+      @media screen and (min-width: 1200px) {
+        width: calc((100% - 4 * 30px) / 4);
+        margin: 15px;
+      }
+      &:not(:last-child) {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 30px;
+        }
+      }
     }
     &-text {
       @include font(400, 14px, 1.71);
@@ -39,7 +62,7 @@
   &__icon-container {
     @include display(flex, center);
     justify-content: center;
-    width: 270px;
+
     height: 120px;
     margin-bottom: 30px;
     border-radius: 4px;

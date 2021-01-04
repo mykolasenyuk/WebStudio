@@ -20,7 +20,20 @@
         <div class="container ">
        <nav class="main-nav">
         <a href="./index.html" class="logo">Web<span class="logo-nav">Studio</span></a>
-
+         <button class="menu--btn" 
+         type="button" 
+         data-menu-button
+         aria-controls="menu-container"
+         aria-expanded="false">
+             <svg  width='40px' height='40px' aria-label="menu switch">
+                 <use class="icon-menu" href="./icons/symbol-defs.svg#icon-menu_40px"></use>
+                 <use class="icon-cross" href="./icons/symbol-defs.svg#icon-close_40px"></use>
+             </svg>
+         </button>
+         <div 
+         class="main-nav__menu" 
+         data-menu
+         id="menu-container">
           <ul class="site-nav__list list">
              <li class="site-nav__item">
                  <a class="site-nav__link current" href="./index.html" > Студия </a></li>
@@ -42,7 +55,7 @@
                 </svg>
                 +38 096 111 11 11</a>  
 
-        </address>
+        </address></div>
     </nav>  
 </div> 
    </header>
@@ -96,7 +109,7 @@
         </div> 
         
         
-        <div class="container">
+        <div class="container service ">
             <h2 class="section__title">Чем мы занимаемся</h2>
             <ul class="service__list">
                 <li class="service__list-item">
@@ -287,7 +300,7 @@
      <section class="section clients">
         <div class="container">
             <h2 class="section__title ">Постоянные клиенты</h2>
-            <ul class="clients__list">
+            <ul class="client__list">
                 <li class="client__list-item">
                     <a class="client__link" href="">
                     <svg class="client__icon">
@@ -441,7 +454,7 @@
         </form>
     </div>
 </div>
-
+<script src="./js/menu.js"></script>
 <script src="./js/modal.js"></script>
 </body>
 </html>

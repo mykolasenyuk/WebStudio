@@ -15,39 +15,50 @@
 </head>
 <body class="page">
       <!-- шапка сайта -->
-      <header class="page-header"> 
+    <header class="page-header">
         <div class="container ">
             <nav class="main-nav">
                 <a href="./index.html" class="logo">Web<span class="logo-nav">Studio</span></a>
-            
-                <ul class="site-nav__list list">
-                    <li class="site-nav__item">
-                        <a class="site-nav__link " href="./index.html"> Студия </a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a class="site-nav__link current" href="./portfolio.html">Портфолио</a>
-                    </li>
-                    <li class="site-nav__item">
-                        <a href="" class="site-nav__link">Контакты</a>
-                    </li>
-                </ul>
-                <address class="site-nav__address">
-                    <a class="address__link" href="mailto:info@example.com">
-                        <svg class="address__icon" width='16px' height='12px'>
-                            <use href="icons/symbol-defs.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com </a>
-            
-                    <a class="address__link" href="tel:+380991111111">
-                        <svg class="address__icon" width='10px' height='16px'>
-                            <use href="icons/symbol-defs.svg#icon-tel"></use>
-                        </svg>
-                        +38 096 111 11 11</a>
-            
-                </address>
+                <button class="menu--btn" 
+                type="button" 
+                data-menu-button 
+                aria-controls="menu-container"
+                 aria-expanded="false">
+                    <svg width='40px' height='40px' aria-label="menu switch">
+                        <use class="icon-menu" href="./icons/symbol-defs.svg#icon-menu_40px"></use>
+                        <use class="icon-cross" href="./icons/symbol-defs.svg#icon-close_40px"></use>
+                    </svg>
+                </button>
+                <div class="main-nav__menu" data-menu id="menu-container">
+                    <ul class="site-nav__list list">
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="./index.html"> Студия </a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link  current" href="./portfolio.html">Портфолио</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a href="" class="site-nav__link">Контакты</a>
+                        </li>
+                    </ul>
+                    <address class="site-nav__address">
+                        <a class="address__link" href="mailto:info@example.com">
+                            <svg class="address__icon" width='16px' height='12px'>
+                                <use href="icons/symbol-defs.svg#icon-envelope"></use>
+                            </svg>
+                            info@devstudio.com </a>
+    
+                        <a class="address__link" href="tel:+380991111111">
+                            <svg class="address__icon" width='10px' height='16px'>
+                                <use href="icons/symbol-defs.svg#icon-tel"></use>
+                            </svg>
+                            +38 096 111 11 11</a>
+    
+                    </address>
+                </div>
             </nav>
-    </div> 
-   </header>
+        </div>
+    </header>
 <main>
     <!--Портфолио-->
        
@@ -265,5 +276,6 @@
 
         </div>
     </footer>
+    <script src="./js/menu.js"></script>
 </body>
 </html>
