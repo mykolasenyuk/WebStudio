@@ -784,6 +784,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .project__list-card:first-child .project__list-description {
+    padding-bottom: 56px;
+  }
+}
+
 .project__list-description {
   padding: 20px 24px;
   border-bottom: 1px solid #eeeeee;

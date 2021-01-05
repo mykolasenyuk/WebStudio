@@ -21,7 +21,6 @@
       width: calc((100% - 2 * 30px) / 2);
       margin: 15px;
     }
-
     margin-bottom: 30px;
 
     &:nth-child(3n) {
@@ -33,6 +32,11 @@
     &:nth-last-child(-n + 3) {
       @media screen and (min-width: 1200px) {
         margin-bottom: 0;
+      }
+    }
+    &:first-child .project__list-description {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
+        padding-bottom: 56px;
       }
     }
   }
