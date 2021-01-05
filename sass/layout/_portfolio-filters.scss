@@ -20,7 +20,7 @@
 
   &__filter {
     @media screen and (max-width: 767px) {
-      margin-bottom: 40px;
+      padding-bottom: 40px;
       flex-wrap: wrap;
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -36,9 +36,10 @@
   &__filter-item:not(:last-child) {
     margin-right: 8px;
   }
-  &__filter-item:first-child {
+  &__filter-item {
     @media screen and (max-width: 767px) {
-      margin-bottom: 15px;
+      margin-top: 15px;
+      margin-left: 8px;
     }
   }
 }

@@ -12,16 +12,11 @@
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: flex;
       flex-wrap: wrap;
-      margin-top: -15px;
-      margin-bottom: -15px;
+      margin: -15px;
     }
     @media screen and (min-width: 1200px) {
       display: flex;
     }
-  }
-
-  &__image {
-    display: block;
   }
 
   &__list-card {

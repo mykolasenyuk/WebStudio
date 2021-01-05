@@ -101,6 +101,12 @@ a {
   }
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -676,7 +682,7 @@ a {
 
 @media screen and (max-width: 767px) {
   .portfolio__filter {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
     flex-wrap: wrap;
   }
 }
@@ -698,8 +704,9 @@ a {
 }
 
 @media screen and (max-width: 767px) {
-  .portfolio__filter-item:first-child {
-    margin-bottom: 15px;
+  .portfolio__filter-item {
+    margin-top: 15px;
+    margin-left: 8px;
   }
 }
 
@@ -736,8 +743,7 @@ a {
   .project__list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: -15px;
-    margin-bottom: -15px;
+    margin: -15px;
   }
 }
 
@@ -815,6 +821,7 @@ a {
 .project__link:focus .project-thumb__overlay {
   opacity: 1;
   transform: translateY(-100%);
+  z-index: 999;
 }
 
 .project-thumb {
