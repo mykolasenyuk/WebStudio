@@ -10,9 +10,6 @@
 
   & > .container {
     @media screen and (min-width: 768px) {
-      display: block;
-    }
-    @media screen and (min-width: 768px) {
       display: flex;
     }
     @media screen and (min-width: 1200px) {
@@ -20,6 +17,7 @@
     }
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       flex-wrap: wrap;
+      align-items: baseline;
       justify-content: space-around;
     }
   }

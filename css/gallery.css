@@ -456,12 +456,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .page-footer > .container {
-    display: block;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .page-footer > .container {
     display: flex;
   }
 }
@@ -475,6 +469,7 @@ img {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer > .container {
     flex-wrap: wrap;
+    align-items: baseline;
     justify-content: space-around;
   }
 }
