@@ -8,6 +8,7 @@
     display: flex;
     flex-wrap: wrap;
   }
+
   margin-top: 0;
   margin-bottom: 0;
   color: var(--text-color);
@@ -99,6 +100,10 @@
     display: block;
     margin-top: 0;
     margin-bottom: 0;
+    @media screen and (max-width: 767px) {
+      margin-top: -30px;
+      margin-bottom: -30px;
+    }
   }
 
   &__description {
@@ -113,5 +118,12 @@
     @include font(400, 18px, 1.56);
     letter-spacing: 0.03em;
     color: var(--primary-white-color);
+    @media screen and (max-width: 767px) {
+      width: 402px;
+    }
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 306px;
+      top: 45%;
+    }
   }
 }
