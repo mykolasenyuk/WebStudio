@@ -108,6 +108,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -115,23 +116,24 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -139,19 +141,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -218,7 +220,7 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    width: 100%;
+    max-width: 100%;
     height: 393px;
     background-color: #fff;
     text-align: center;
@@ -618,13 +620,13 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__subscribe-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer__subscribe-input {
-    width: 358px;
+    max-width: 358px;
   }
 }
 
@@ -761,14 +763,14 @@ img {
 
 @media screen and (min-width: 1200px) {
   .project__list-card {
-    width: calc((100% - 60px) / 3);
+    max-width: calc((100% - 60px) / 3);
     margin-right: 30px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .project__list-card {
-    width: calc((100% - 2 * 30px) / 2);
+    max-width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
@@ -876,7 +878,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .project-thumb__description {
-    width: 402px;
+    max-width: 402px;
   }
 }
 

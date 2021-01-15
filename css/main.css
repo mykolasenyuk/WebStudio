@@ -108,6 +108,7 @@ img {
 }
 
 .container {
+  width: 100%;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -115,19 +116,19 @@ img {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
 }
 
@@ -194,7 +195,7 @@ img {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    width: 100%;
+    max-width: 100%;
     height: 393px;
     background-color: #fff;
     text-align: center;
@@ -594,13 +595,13 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__subscribe-input {
-    width: 450px;
+    max-width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer__subscribe-input {
-    width: 358px;
+    max-width: 358px;
   }
 }
 
@@ -740,14 +741,14 @@ img {
 
 @media screen and (min-width: 768px) {
   .feature__list-item {
-    width: calc((100% - 2 * 30px) / 2);
+    max-width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .feature__list-item {
-    width: calc((100% - 4 * 30px) / 4);
+    max-width: calc((100% - 4 * 30px) / 4);
     margin: 15px;
   }
 }
@@ -972,14 +973,14 @@ img {
 
 @media screen and (max-width: 767px) {
   .client__list-item {
-    width: calc((100% - 2 * 30px) / 2);
+    max-width: calc((100% - 2 * 30px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .client__list-item {
-    width: calc((100% - 3 * 30px) / 3);
+    max-width: calc((100% - 3 * 30px) / 3);
     margin: 15px;
   }
 }
@@ -997,7 +998,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .client__link {
-    width: 170px;
+    max-width: 170px;
   }
 }
 
@@ -1071,14 +1072,14 @@ img {
 
 @media screen and (max-width: 1199px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
     max-height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
 }

@@ -20,11 +20,11 @@
 }
 .modal {
   @media screen and (max-width: 1199px) {
-    width: 450px;
+    max-width: 450px;
     max-height: 609px;
   }
   @media screen and (min-width: 1200px) {
-    width: 528px;
+    max-width: 528px;
     min-height: 581px;
   }
   position: relative;
