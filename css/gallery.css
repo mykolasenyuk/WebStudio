@@ -620,13 +620,13 @@ img {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .page-footer__subscribe-input {
-    max-width: 450px;
+    width: 450px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .page-footer__subscribe-input {
-    max-width: 358px;
+    width: 358px;
   }
 }
 
