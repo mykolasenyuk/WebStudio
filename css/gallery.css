@@ -854,13 +854,6 @@ img {
   margin-bottom: 0;
 }
 
-@media screen and (max-width: 767px) {
-  .project-thumb__img {
-    margin-top: -30px;
-    margin-bottom: -30px;
-  }
-}
-
 .project-thumb__description {
   position: absolute;
   left: 50%;
